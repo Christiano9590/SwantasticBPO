@@ -276,6 +276,14 @@ strong {
     text-shadow: 0 0 12px var(--color-accent-glow);
 }
 
+/* --- Added style for your image logo --- */
+.nav-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
 .logo-highlight {
     color: var(--color-accent);
     font-weight: 800;
