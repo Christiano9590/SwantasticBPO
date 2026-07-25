@@ -58,7 +58,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: italic;
-    /* cursor is set conditionally via class desktop-cursor */
 }
 
 body.desktop-cursor {
@@ -168,7 +167,6 @@ strong {
     font-size: 1rem;
     font-weight: 600;
     border-radius: var(--border-radius-xl);
-    /* cursor: none; -> controlled by body.desktop-cursor */
     transition: all var(--transition-smooth);
     border: 2px solid transparent;
     letter-spacing: 0.3px;
@@ -328,7 +326,6 @@ strong {
 .hamburger {
     display: none;
     flex-direction: column;
-    /* cursor: none; -> desktop only via body class */
     gap: 5px;
     z-index: 1001;
 }
@@ -355,7 +352,7 @@ strong {
 }
 
 /* ============================================
-   HERO SECTION (no scroll indicator)
+   HERO SECTION
    ============================================ */
 .hero {
     position: relative;
@@ -470,32 +467,21 @@ strong {
 
 .hero-buttons {
     display: flex;
-    gap: 18px;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     animation: fadeInUp 0.8s ease-out 0.45s both;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hero-buttons-row {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.hero-extra-btn {
+    /* additional styling if needed; inherits .btn-outline */
 }
 
 /* ============================================
@@ -1022,7 +1008,6 @@ strong {
     color: var(--color-primary);
     border: none;
     border-radius: 50%;
-    /* cursor: none; -> controlled by body.desktop-cursor */
     font-size: 1.1rem;
     display: flex;
     align-items: center;
@@ -1098,7 +1083,6 @@ strong {
     border: none;
     color: var(--color-accent);
     font-size: 2rem;
-    /* cursor: none; -> controlled by body.desktop-cursor */
     transition: color 0.2s;
     line-height: 1;
 }
@@ -1252,15 +1236,9 @@ strong {
         font-size: 1rem;
     }
 
-    .hero-buttons {
+    .hero-buttons-row {
         flex-direction: column;
         align-items: center;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-        max-width: 280px;
-        justify-content: center;
     }
 
     .section-title {
