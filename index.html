@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Glowing Cyan Cursor (hidden by default, shown on desktop) -->
+    <!-- Custom Glowing Cyan Cursor (hidden on mobile) -->
     <div class="cursor-dot" id="cursorDot" style="display:none;"></div>
 
     <!-- Navigation Bar -->
@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Scroll indicator removed) -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="heroParticles"></div>
@@ -53,11 +53,16 @@
                 <span class="hero-address">45 Ocean Boulevard, Central Kingston, Jamaica</span>
             </p>
             <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary">
-                    <i class="fa-solid fa-circle-info"></i> Learn More
-                </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fa-solid fa-envelope"></i> Get In Touch
+                <div class="hero-buttons-row">
+                    <a href="#about" class="btn btn-primary">
+                        <i class="fa-solid fa-circle-info"></i> Learn More
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+                <a href="https://payrolls.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline hero-extra-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> PayrollsOrg
                 </a>
             </div>
         </div>
