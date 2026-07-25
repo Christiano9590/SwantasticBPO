@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Glowing Cyan Cursor -->
-    <div class="cursor-dot" id="cursorDot"></div>
+    <!-- Custom Glowing Cyan Cursor (hidden by default, shown on desktop) -->
+    <div class="cursor-dot" id="cursorDot" style="display:none;"></div>
 
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
@@ -60,7 +60,6 @@
                     <i class="fa-solid fa-envelope"></i> Get In Touch
                 </a>
             </div>
-            <!-- Scroll indicator removed -->
         </div>
     </section>
 
@@ -257,7 +256,6 @@
             </div>
             <div class="contact-cta">
                 <p>Have a payroll inquiry? We're here to help!</p>
-                <!-- Changed from anchor to button for modal trigger -->
                 <button class="btn btn-primary" id="openEmailModalBtn">
                     <i class="fa-solid fa-paper-plane"></i> Send Us an Email
                 </button>
