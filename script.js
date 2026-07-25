@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const messageField = document.getElementById('messageField');
     const charCounter = document.getElementById('charCounter');
 
+    // ----- Device detection: enable custom cursor only on desktop -----
+    const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (isDesktop) {
+        document.body.classList.add('desktop-cursor');
+        if (cursorDot) cursorDot.style.display = 'block';
+    } else {
+        if (cursorDot) cursorDot.style.display = 'none';
+    }
+
     // Footer year
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
@@ -42,14 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Custom cursor
-    if (cursorDot) {
+    // ----- Custom cursor movement (only if dot is visible) -----
+    if (cursorDot && isDesktop) {
         document.addEventListener('mousemove', (e) => {
             cursorDot.style.left = e.clientX + 'px';
             cursorDot.style.top = e.clientY + 'px';
         });
 
-        const interactiveElements = document.querySelectorAll('a, button, .btn, .nav-link, .hamburger, .back-to-top, .modal-close');
+        const interactiveElements = document.querySelectorAll('a, button, .btn, .nav-link, .hamburger, .back-to-top, .modal-close, input, textarea');
         interactiveElements.forEach(el => {
             el.addEventListener('mouseenter', () => cursorDot.classList.add('hover'));
             el.addEventListener('mouseleave', () => cursorDot.classList.remove('hover'));
@@ -153,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
-    // --- Email Modal Logic ---
+    // ----- Email Modal Logic -----
     const receiverEmail = 'payrollswantasticbpo@gmail.com';
 
     // Character counter
@@ -210,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Escape key to close modal
+    // Escape key to close modal / mobile menu
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
             if (emailModal && emailModal.classList.contains('active')) closeModal();
