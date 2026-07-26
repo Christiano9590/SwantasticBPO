@@ -1,334 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swantastic BPO | Payroll Department</title>
-    <link rel="icon" type="image/png" href="Black and White Square Wedding Logo_20260723_083556_0000.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swantastic BPO | Payroll Department</title>
+<link rel="icon" type="image/png" href="Black and White Square Wedding Logo_20260723_083556_0000.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Glowing Cyan Cursor (hidden on mobile) -->
-    <div class="cursor-dot" id="cursorDot" style="display:none;"></div>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="Black and White Square Wedding Logo_20260723_083556_0000.png" alt="Logo" class="nav-logo-img">
-                <span>Swantastic<span class="logo-highlight">BPO</span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#functions" class="nav-link">Functions</a></li>
-                <li><a href="#mission" class="nav-link">Mission & Vision</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>Payroll Department</span>
-            </div>
-            <h1 class="hero-title">
-                Swantastic <span class="text-accent">BPO</span>
-            </h1>
-            <p class="hero-subtitle">
-                Accurate. Timely. Secure. — Your trusted payroll partner at
-                <span class="hero-address">45 Ocean Boulevard, Central Kingston, Jamaica</span>
-            </p>
-            <div class="hero-buttons">
-                <div class="hero-buttons-row">
-                    <a href="#about" class="btn btn-primary">
-                        <i class="fa-solid fa-circle-info"></i> Learn More
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fa-solid fa-envelope"></i> Get In Touch
-                    </a>
-                </div>
-                <a href="https://payroll.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline hero-extra-btn">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> PayrollsOrg
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">About Us</span>
-                <h2 class="section-title">About the <span class="text-accent">Department</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-grid">
-                <div class="about-card about-main-card">
-                    <div class="about-icon-wrapper">
-                        <i class="fa-solid fa-calculator"></i>
-                    </div>
-                    <p class="about-description">
-                        The <strong>Payroll Department</strong> of Swantastic Business Process Outsourcing
-                        (Swantastic BPO) is responsible for the preparation of employee salaries,
-                        ensuring that salaries are calculated <span class="text-accent">accurately</span> and
-                        <span class="text-accent">on time</span>. The department manages employee salary
-                        records, overtime, taxes, and deductions while maintaining
-                        <strong>confidentiality</strong> and following company policies.
-                    </p>
-                </div>
-                <div class="about-card about-values-card">
-                    <h3 class="card-title">
-                        <i class="fa-solid fa-star"></i> Our Core Values
-                    </h3>
-                    <ul class="values-list">
-                        <li><i class="fa-solid fa-check-circle"></i> Accuracy in every calculation</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Timely processing & distribution</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Strict confidentiality</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Policy compliance</li>
-                        <li><i class="fa-solid fa-check-circle"></i> Clear communication</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Functions Section (Communication card centered) -->
-    <section class="functions-section" id="functions">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">What We Do</span>
-                <h2 class="section-title">Functions of the <span class="text-accent">Department</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="functions-grid">
-                <div class="function-card" data-index="0">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <h3>Collect Data</h3>
-                    <p>Collect data required for processing payroll accurately and efficiently.</p>
-                    <span class="function-number">01</span>
-                </div>
-                <div class="function-card" data-index="1">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-chart-pie"></i>
-                    </div>
-                    <h3>Calculate Earnings</h3>
-                    <p>Calculate overtime, bonuses, and deductions with precision.</p>
-                    <span class="function-number">02</span>
-                </div>
-                <div class="function-card" data-index="2">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                    </div>
-                    <h3>Process Salaries</h3>
-                    <p>Process employee salaries and wages on schedule.</p>
-                    <span class="function-number">03</span>
-                </div>
-                <div class="function-card" data-index="3">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-file-invoice"></i>
-                    </div>
-                    <h3>Distribute Pay Slips</h3>
-                    <p>Prepare and distribute pay slips to all employees.</p>
-                    <span class="function-number">04</span>
-                </div>
-                <div class="function-card" data-index="4">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-folder-tree"></i>
-                    </div>
-                    <h3>Maintain Records</h3>
-                    <p>Maintain comprehensive and secure payroll records.</p>
-                    <span class="function-number">05</span>
-                </div>
-                <div class="function-card" data-index="5">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-landmark"></i>
-                    </div>
-                    <h3>Tax Compliance</h3>
-                    <p>Ensure taxes and deductions are submitted correctly and on time.</p>
-                    <span class="function-number">06</span>
-                </div>
-                <div class="function-card communication-card" data-index="6">
-                    <div class="function-icon">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    <h3>Communication</h3>
-                    <p>Communicate with employees clearly and consistently.</p>
-                    <span class="function-number">07</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mission & Vision Section -->
-    <section class="mission-section" id="mission">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Our Purpose</span>
-                <h2 class="section-title">Mission & <span class="text-accent">Vision</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="mission-grid">
-                <div class="mission-card mission-statement-card">
-                    <div class="mission-card-header">
-                        <div class="mission-icon">
-                            <i class="fa-solid fa-bullseye"></i>
-                        </div>
-                        <h3>Mission Statement</h3>
-                    </div>
-                    <p class="mission-text">
-                        Swantastic BPO aims to provide <strong>accurate</strong>,
-                        <strong>timely</strong>, and <strong>secure</strong> payroll services,
-                        and efficient support to employees.
-                    </p>
-                    <div class="mission-quote-mark">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
-                </div>
-                <div class="mission-card vision-statement-card">
-                    <div class="mission-card-header">
-                        <div class="mission-icon vision-icon">
-                            <i class="fa-solid fa-eye"></i>
-                        </div>
-                        <h3>Vision Statement</h3>
-                    </div>
-                    <p class="mission-text">
-                        To become the <strong>#1 trusted</strong> payroll department known
-                        for <span class="text-accent">efficiency</span>,
-                        <span class="text-accent">reliability</span>, and
-                        <span class="text-accent">transparency</span>.
-                    </p>
-                    <div class="mission-quote-mark">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-tag">Reach Out</span>
-                <h2 class="section-title">Contact <span class="text-accent">Information</span></h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon-wrapper">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3>Address</h3>
-                    <p>45 Ocean Boulevard<br>Central Kingston, Jamaica</p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon-wrapper">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <h3>Phone</h3>
-                    <p><a href="tel:+18764941454">(876) 494-1454</a></p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon-wrapper">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <h3>Email</h3>
-                    <p><a href="mailto:payrollswantasticbpo@gmail.com">payrollswantasticbpo@gmail.com</a></p>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon-wrapper">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <h3>Office Hours</h3>
-                    <p>Monday – Friday<br>8:00 a.m. – 5:00 p.m.</p>
-                </div>
-            </div>
-            <div class="contact-cta">
-                <p>Have a payroll inquiry? We're here to help!</p>
-                <button class="btn btn-primary" id="openEmailModalBtn">
-                    <i class="fa-solid fa-paper-plane"></i> Send Us an Email
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Swantastic<span class="logo-highlight">BPO</span></span>
-                    </div>
-                    <p class="footer-tagline">Payroll Department — Accurate. Timely. Secure.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#functions">Functions</a></li>
-                        <li><a href="#mission">Mission & Vision</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Get In Touch</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-location-dot"></i> 45 Ocean Boulevard, Central Kingston</li>
-                        <li><i class="fa-solid fa-phone"></i> (876) 494-1454</li>
-                        <li><i class="fa-solid fa-envelope"></i> payrollswantasticbpo@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> Swantastic BPO. All rights reserved. | Payroll Department</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- Email Modal -->
-    <div class="modal-overlay" id="emailModal">
-        <div class="modal-content">
-            <button class="modal-close" id="closeModalBtn">&times;</button>
-            <h3 class="modal-title">Send an Email</h3>
-            <div class="modal-field">
-                <label for="receiverEmail">To:</label>
-                <input type="text" id="receiverEmail" class="disabled-input" value="payrollswantasticbpo@gmail.com" readonly>
-            </div>
-            <div class="modal-field">
-                <label for="messageField">Your Message (<span id="charCounter">0</span>/400)</label>
-                <textarea id="messageField" rows="6" maxlength="400" placeholder="Type your message here..."></textarea>
-            </div>
-            <button class="btn btn-primary modal-send-btn" id="sendEmailBtn">
-                <i class="fa-solid fa-paper-plane"></i> Send
-            </button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<div class="cursor-dot" id="cursorDot" style="display:none;"></div>
+<nav class="navbar" id="navbar">
+<div class="nav-container">
+<div class="nav-logo">
+<img src="Black and White Square Wedding Logo_20260723_083556_0000.png" alt="Logo" class="nav-logo-img">
+<span>Swantastic<span class="logo-highlight">BPO</span></span>
+</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#functions" class="nav-link">Functions</a></li>
+<li><a href="#mission" class="nav-link">Mission &amp; Vision</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+<div class="hamburger" id="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+</div>
+</nav>
+<section class="hero" id="home">
+<div class="hero-overlay"></div>
+<div class="hero-particles" id="heroParticles"></div>
+<div class="hero-content">
+<div class="hero-badge">
+<i class="fa-solid fa-shield-halved"></i>
+<span>Payroll Department</span>
+</div>
+<h1 class="hero-title">
+Swantastic <span class="text-accent">BPO</span>
+</h1>
+<p class="hero-subtitle">
+Accurate. Timely. Secure. — Your trusted payroll partner at
+<span class="hero-address">45 Ocean Boulevard, Central Kingston, Jamaica</span>
+</p>
+<div class="hero-buttons">
+<div class="hero-buttons-grid">
+<div class="hero-btn-col">
+<a href="#about" class="btn btn-primary">
+<i class="fa-solid fa-circle-info"></i> Learn More
+</a>
+<a href="https://payroll.org" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+<i class="fa-solid fa-arrow-up-right-from-square"></i> PayrollsOrg
+</a>
+</div>
+<div class="hero-btn-col">
+<a href="#contact" class="btn btn-outline">
+<i class="fa-solid fa-envelope"></i> Get In Touch
+</a>
+<a href="EmploymentPayroll.html" class="btn btn-outline">
+<i class="fa-solid fa-pen-to-square"></i> Fillout Form
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="about-section" id="about">
+<div class="section-container">
+<div class="section-header">
+<span class="section-tag">About Us</span>
+<h2 class="section-title">About the <span class="text-accent">Department</span></h2>
+<div class="section-divider"></div>
+</div>
+<div class="about-grid">
+<div class="about-card about-main-card">
+<div class="about-icon-wrapper">
+<i class="fa-solid fa-calculator"></i>
+</div>
+<p class="about-description">
+The <strong>Payroll Department</strong> of Swantastic Business Process Outsourcing
+(Swantastic BPO) is responsible for the preparation of employee salaries,
+ensuring that salaries are calculated <span class="text-accent">accurately</span> and
+<span class="text-accent">on time</span>. The department manages employee salary
+records, overtime, taxes, and deductions while maintaining
+<strong>confidentiality</strong> and following company policies.
+</p>
+</div>
+<div class="about-card about-values-card">
+<h3 class="card-title">
+<i class="fa-solid fa-star"></i> Our Core Values
+</h3>
+<ul class="values-list">
+<li><i class="fa-solid fa-check-circle"></i> Accuracy in every calculation</li>
+<li><i class="fa-solid fa-check-circle"></i> Timely processing &amp; distribution</li>
+<li><i class="fa-solid fa-check-circle"></i> Strict confidentiality</li>
+<li><i class="fa-solid fa-check-circle"></i> Policy compliance</li>
+<li><i class="fa-solid fa-check-circle"></i> Clear communication</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="functions-section" id="functions">
+<div class="section-container">
+<div class="section-header">
+<span class="section-tag">What We Do</span>
+<h2 class="section-title">Functions of the <span class="text-accent">Department</span></h2>
+<div class="section-divider"></div>
+</div>
+<div class="functions-grid">
+<div class="function-card" data-index="0">
+<div class="function-icon"><i class="fa-solid fa-database"></i></div>
+<h3>Collect Data</h3>
+<p>Collect data required for processing payroll accurately and efficiently.</p>
+<span class="function-number">01</span>
+</div>
+<div class="function-card" data-index="1">
+<div class="function-icon"><i class="fa-solid fa-chart-pie"></i></div>
+<h3>Calculate Earnings</h3>
+<p>Calculate overtime, bonuses, and deductions with precision.</p>
+<span class="function-number">02</span>
+</div>
+<div class="function-card" data-index="2">
+<div class="function-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+<h3>Process Salaries</h3>
+<p>Process employee salaries and wages on schedule.</p>
+<span class="function-number">03</span>
+</div>
+<div class="function-card" data-index="3">
+<div class="function-icon"><i class="fa-solid fa-file-invoice"></i></div>
+<h3>Distribute Pay Slips</h3>
+<p>Prepare and distribute pay slips to all employees.</p>
+<span class="function-number">04</span>
+</div>
+<div class="function-card" data-index="4">
+<div class="function-icon"><i class="fa-solid fa-folder-tree"></i></div>
+<h3>Maintain Records</h3>
+<p>Maintain comprehensive and secure payroll records.</p>
+<span class="function-number">05</span>
+</div>
+<div class="function-card" data-index="5">
+<div class="function-icon"><i class="fa-solid fa-landmark"></i></div>
+<h3>Tax Compliance</h3>
+<p>Ensure taxes and deductions are submitted correctly and on time.</p>
+<span class="function-number">06</span>
+</div>
+<div class="function-card communication-card" data-index="6">
+<div class="function-icon"><i class="fa-solid fa-comments"></i></div>
+<h3>Communication</h3>
+<p>Communicate with employees clearly and consistently.</p>
+<span class="function-number">07</span>
+</div>
+</div>
+</div>
+</section>
+<section class="mission-section" id="mission">
+<div class="section-container">
+<div class="section-header">
+<span class="section-tag">Our Purpose</span>
+<h2 class="section-title">Mission &amp; <span class="text-accent">Vision</span></h2>
+<div class="section-divider"></div>
+</div>
+<div class="mission-grid">
+<div class="mission-card mission-statement-card">
+<div class="mission-card-header">
+<div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
+<h3>Mission Statement</h3>
+</div>
+<p class="mission-text">
+Swantastic BPO aims to provide <strong>accurate</strong>,
+<strong>timely</strong>, and <strong>secure</strong> payroll services,
+and efficient support to employees.
+</p>
+<div class="mission-quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+</div>
+<div class="mission-card vision-statement-card">
+<div class="mission-card-header">
+<div class="mission-icon vision-icon"><i class="fa-solid fa-eye"></i></div>
+<h3>Vision Statement</h3>
+</div>
+<p class="mission-text">
+To become the <strong>#1 trusted</strong> payroll department known
+for <span class="text-accent">efficiency</span>,
+<span class="text-accent">reliability</span>, and
+<span class="text-accent">transparency</span>.
+</p>
+<div class="mission-quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-section" id="contact">
+<div class="section-container">
+<div class="section-header">
+<span class="section-tag">Reach Out</span>
+<h2 class="section-title">Contact <span class="text-accent">Information</span></h2>
+<div class="section-divider"></div>
+</div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+<h3>Address</h3>
+<p>45 Ocean Boulevard<br>Central Kingston, Jamaica</p>
+</div>
+<div class="contact-card">
+<div class="contact-icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+<h3>Phone</h3>
+<p><a href="tel:+18764941454">(876) 494-1454</a></p>
+</div>
+<div class="contact-card">
+<div class="contact-icon-wrapper"><i class="fa-solid fa-envelope"></i></div>
+<h3>Email</h3>
+<p><a href="mailto:payrollswantasticbpo@gmail.com">payrollswantasticbpo@gmail.com</a></p>
+</div>
+<div class="contact-card">
+<div class="contact-icon-wrapper"><i class="fa-solid fa-clock"></i></div>
+<h3>Office Hours</h3>
+<p>Monday – Friday<br>8:00 a.m. – 5:00 p.m.</p>
+</div>
+</div>
+<div class="contact-cta">
+<p>Have a payroll inquiry? We're here to help!</p>
+<button class="btn btn-primary" id="openEmailModalBtn">
+<i class="fa-solid fa-paper-plane"></i> Send Us an Email
+</button>
+</div>
+</div>
+</section>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-top">
+<div class="footer-brand">
+<div class="footer-logo">
+<i class="fa-solid fa-building-columns"></i>
+<span>Swantastic<span class="logo-highlight">BPO</span></span>
+</div>
+<p class="footer-tagline">Payroll Department — Accurate. Timely. Secure.</p>
+</div>
+<div class="footer-links">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#functions">Functions</a></li>
+<li><a href="#mission">Mission &amp; Vision</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Get In Touch</h4>
+<ul>
+<li><i class="fa-solid fa-location-dot"></i> 45 Ocean Boulevard, Central Kingston</li>
+<li><i class="fa-solid fa-phone"></i> (876) 494-1454</li>
+<li><i class="fa-solid fa-envelope"></i> payrollswantasticbpo@gmail.com</li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; <span id="currentYear"></span> Swantastic BPO. All rights reserved. | Payroll Department</p>
+</div>
+</div>
+</footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="modal-overlay" id="emailModal">
+<div class="modal-content">
+<button class="modal-close" id="closeModalBtn">&times;</button>
+<h3 class="modal-title">Send an Email</h3>
+<div class="modal-field">
+<label for="receiverEmail">To:</label>
+<input type="text" id="receiverEmail" class="disabled-input" value="payrollswantasticbpo@gmail.com" readonly>
+</div>
+<div class="modal-field">
+<label for="messageField">Your Message (<span id="charCounter">0</span>/400)</label>
+<textarea id="messageField" rows="6" maxlength="400" placeholder="Type your message here..."></textarea>
+</div>
+<button class="btn btn-primary modal-send-btn" id="sendEmailBtn">
+<i class="fa-solid fa-paper-plane"></i> Send
+</button>
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
