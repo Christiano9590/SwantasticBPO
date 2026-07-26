@@ -131,8 +131,8 @@ strong{font-weight:600;color:var(--color-white)}
 .contact-icon-wrapper{width:60px;height:60px;background:rgba(100,255,218,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--color-accent);margin:0 auto 18px;border:1px solid rgba(100,255,218,0.35);box-shadow:0 0 18px rgba(100,255,218,0.25);transition:all var(--transition-smooth)}
 .contact-card:hover .contact-icon-wrapper{box-shadow:0 0 30px rgba(100,255,218,0.55)}
 .contact-card h3{font-size:1rem;font-weight:700;color:var(--color-white);margin-bottom:10px;letter-spacing:0.3px;text-shadow:0 0 8px var(--color-accent-glow)}
-.contact-card p{font-size:0.95rem;color:var(--color-gray-light);line-height:1.6}
-.contact-card a{color:var(--color-accent);transition:color var(--transition-fast);text-shadow:0 0 6px var(--color-accent-glow)}
+.contact-card p{font-size:0.95rem;color:var(--color-gray-light);line-height:1.6;text-align:center}
+.contact-card a{color:var(--color-accent);transition:color var(--transition-fast);text-shadow:0 0 6px var(--color-accent-glow);display:inline}
 .contact-card a:hover{color:var(--color-white);text-decoration:underline}
 .contact-cta{text-align:center;padding:40px 0 0}
 .contact-cta p{font-size:1.1rem;color:var(--color-gray-light);margin-bottom:20px}
